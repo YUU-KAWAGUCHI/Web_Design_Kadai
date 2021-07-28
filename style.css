@@ -12,6 +12,7 @@ header,main,footer,.all-wrapper{
 
 .header{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -22,7 +23,6 @@ header,main,footer,.all-wrapper{
 
 .header_box{
 	display: flex;
-	flex-wrap: wrap;
 	align-items: center;
 }
 
