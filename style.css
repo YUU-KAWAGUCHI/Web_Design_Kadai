@@ -22,6 +22,7 @@ header,main,footer,.all-wrapper{
 
 .header_box{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
