@@ -36,11 +36,11 @@ header,main,footer,.all-wrapper{
 	font-size: 50px;
 }
 
-nav,h1{
-	margin: 60px auto 25px;
+.footer_box,.header_nav,h1{
+	margin: 40px auto 25px;
 }
 
-nav{
+.footer_box,.header_nav{
 	background-color: #28a44a;
 }
 
@@ -58,7 +58,7 @@ li{
 }
 
 li a{
-	font-size: 28px;
+	font-size: 26px;
 	text-decoration: none;
 }
 
@@ -89,14 +89,19 @@ h1{
 }
 
 .contents_wrapper{
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.contents_box{
+	margin: 20px;
 }
 
 .tsuukin_img{
 	width: 320px;
 	height: 280px;
+	max-width: 100%;
 }
 
 .contents_wrapper2{
@@ -107,7 +112,7 @@ h1{
 	width: 40%;
 }
 
-.contents_text{
+.contents_text1,.contents_text2{
 	width: 60%;
 }
 
@@ -153,7 +158,82 @@ table{
     text-align: right;
 }
 
+.footer_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .footer_logo{
 	width: 60px;
 	height: 60px;
+	padding-right: 30px;
+}
+
+/*sp対応*/
+@media (max-width: 760px){
+	.tell{
+		display: none;
+	}
+
+	.logo{
+		width: 70px;
+		height: 70px;
+	}
+
+	.header_nav{
+		display: none;
+	}
+
+	.contents_wrapper3{
+		display: block;
+	}
+
+	iframe{
+		width: 100%;
+	}
+
+	.speed_img{
+		width: 50%;
+	}
+
+	.contents_text1{
+		width: 50%;
+	}
+
+	.contents_text2{
+		width: 100%;
+	}
+
+	.contents_wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.company{
+		flex-direction: column-reverse;
+	}
+
+	.company_text{
+		align-items: center;
+		margin-top: 20px; 
+	}
+
+	.contact_wrapper{
+		display: none;
+	}
+
+	.footer_ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	li{
+		padding: 5px;
+	}
+
+	li a{
+		font-size: 11px;
+	}
 }
